@@ -1,6 +1,6 @@
 package problemstatement.bankingsystem;
 
-// BankAccount.java (Abstract Class)
+// create bankaccount class
 abstract class BankAccount {
     private String accountNumber;
     private String holderName;

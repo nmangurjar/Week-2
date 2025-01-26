@@ -15,17 +15,14 @@ class CurrentAccount extends BankAccount implements Loanable {
         return overdraftLimit;
     }
 
-    @Override
     public double calculateInterest() {
         return getBalance() * INTEREST_RATE;
     }
 
-    @Override
     public void applyForLoan(double loanAmount) {
         System.out.println("Loan application submitted for Current Account: " + loanAmount);
     }
 
-    @Override
     public double calculateLoanEligibility() {
         return getBalance() + overdraftLimit; // Eligibility includes overdraft limit
     }
